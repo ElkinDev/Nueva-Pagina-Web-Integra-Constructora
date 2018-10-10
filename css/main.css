@@ -161,7 +161,7 @@ h4,
 h5,
 h6 {
     font-family: avenirbold;
-    color: #222;
+    color: #3f494b;
     line-height: 1.2em !important;
     margin-bottom: 0;
     margin-top: 0;
@@ -178,7 +178,7 @@ h6 {
     margin-top: 0;
     font-family: avenirbold;
     font-weight: 600;
-    color: #222
+    color: #3f494b;
 }
 
 h1,
@@ -2331,7 +2331,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-gap {
-    padding: 120px 0
+    padding: 120px 0;
+}
+.section-gap-1 {
+    padding: 50px 0;
 }
 .section-video{
     padding-bottom:120px
@@ -2453,7 +2456,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom: 0
 }
 .carousel-item {
-    height: 100vh;
+    height: 80vh;
     min-height: 400px;
     background: no-repeat left center;
     -webkit-background-size: cover;
@@ -2469,6 +2472,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 380px;
     margin-top:150px;
 }
+
+.banner-area-1 {
+    background: url(../img/banner-bg.jpg) center ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    height: 80vh;
+    margin-top:150px;
+}
+
 
 @media (max-width: 767.98px) {
     .banner-area .fullscreen {
@@ -2621,8 +2634,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-.home-about-area {
-    background-color: #3f494b
+.home-about-area, .home-about-area-1 {
+    background-color: #3f494b;
+    padding:100px;
+
 }
 
 .home-about-area:after {
@@ -2630,14 +2645,27 @@ body.mobile-nav-active #mobile-nav-toggle {
     content: "";
     top: 0;
     left: 0;
-    width: 48%;
+    width: 50%;
     height: 100%;
-    background: url(../img/about-img.jpg) no-repeat center center/cover;
+    background: url(../img/gerente.jpg) no-repeat center center/cover;
     z-index: 1
 }
 
+.home-about-area-1:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../img/gerente.jpg) no-repeat center center/cover;
+    z-index: 1;
+}
 @media (max-width: 991px) {
     .home-about-area:after {
+        display: none
+    }
+    .home-about-area-1:after {
         display: none
     }
 }
@@ -2646,19 +2674,44 @@ body.mobile-nav-active #mobile-nav-toggle {
     .home-about-area .justify-content-end {
         justify-content: flex-start !important
     }
+    .home-about-area, .home-about-area-1 {
+        padding:50px;
+    
+    }
 }
 
-.home-about-area h1 {
-    margin-bottom: 20px
+.home-about-area h3 {
+    margin-bottom: 20px;
+    background-color:#C5D73B;
+    padding:20px;
+    color:#3f494b !important;
 }
-
+.home-about-area p {
+    color:#fff;
+}
+.home-about-area-1 p {
+    color:#fff;
+}
+.home-about-area-1 h3 {
+    margin-bottom: 20px;
+    background-color:#C5D73B;
+    padding:20px;
+    color:#3f494b !important;
+}
 .home-about-area .home-about-right {
     max-width: 580px;
     padding-left: 35px
 }
 
+.home-about-area-1 .home-about-right {
+    max-width: 580px;
+    padding-left: 0;
+}
 @media (max-width: 1024px) {
     .home-about-area .home-about-right {
+        padding-left: 15px
+    }
+    .home-about-area-1 .home-about-right {
         padding-left: 15px
     }
 }
@@ -2667,8 +2720,21 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px
 }
 
+.home-about-area-1 .single-services {
+    margin-top: 10px
+}
+
 .home-about-area .single-services h4 {
     margin: 20px 0
+}
+.home-about-area-1 .single-services h4 {
+    margin: 20px 0
+}
+
+.home-about-area-1 .single-services .lnr {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #67bc00
 }
 
 .home-about-area .single-services .lnr {
@@ -2676,9 +2742,18 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 30px;
     color: #67bc00
 }
+.home-about-area-1 .single-services .lnr {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #67bc00
+}
 
 @media (max-width: 414px) {
     .home-about-area .single-services p {
+        font-size: 10px;
+        max-width: 90%
+    }
+    .home-about-area-1 .single-services p {
         font-size: 10px;
         max-width: 90%
     }
@@ -2770,11 +2845,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .team-area .single-team {
-    padding: 10px
+    padding: 10px;
+    
 }
 
 .team-area .thumb {
-    position: relative
+    position: relative;
+
 }
 
 .team-area .thumb div {
@@ -2784,8 +2861,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 0;
     left: 0;
     color: #fff;
-    opacity: 0;
-    transition: opacity 0.5s
+    
 }
 
 .team-area .thumb img {
@@ -2813,7 +2889,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .team-area .thumb div h4 {
     bottom: 75px;
-    color: #fff
+    color: #3f494b;
 }
 
 .team-area .thumb:hover div {
@@ -3230,7 +3306,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-banner {
-    background: url(../img/top-banner.jpg) center;
+    background: url(../img/nosotros_bg.jpg) center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat:no-repeat;
@@ -3494,7 +3570,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .top-category-widget-area .single-cat-widget .overlay-bg {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 1);
     margin: 7%;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;

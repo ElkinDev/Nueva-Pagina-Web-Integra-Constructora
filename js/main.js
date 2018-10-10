@@ -373,7 +373,7 @@ $(document).ready(function () {
     $(document).ready(function () {
         $('.video').on('click', function (ev) {
             $('.video img').css({'display':'none'});
-            $(".video iframe")[0].src += "&autoplay=1";
+            $(".video iframe")[0].src += "?autoplay=1";
             $('.video iframe').css({'display':'block'});
 
         });
