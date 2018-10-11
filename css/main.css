@@ -2370,7 +2370,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .p1-gradient-bg,
 .main-menu,
 .primary-btn,
-.team-area .thumb div,
+/* .team-area .thumb div, */
 .footer-social a:hover,
 .single-footer-widget .bb-btn {
     background-image: -moz-linear-gradient(0deg, #C5D73B 0%, #62b900 100%);
@@ -2474,7 +2474,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .banner-area-1 {
-    background: url(../img/banner-bg.jpg) center ;
+    /* background: url(../img/banner-bg.jpg) center ; */
     background-size: cover;
     background-attachment: fixed;
     background-repeat:no-repeat;
@@ -2846,6 +2846,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .team-area .single-team {
     padding: 10px;
+    height:465px;
+    /* min-height:100vh; */
     
 }
 
@@ -2861,6 +2863,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 0;
     left: 0;
     color: #fff;
+    opacity: 0.8;
+    background-color:#3f4933; 
     
 }
 
@@ -2889,7 +2893,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .team-area .thumb div h4 {
     bottom: 75px;
-    color: #3f494b;
+    color: #fff;
 }
 
 .team-area .thumb:hover div {
@@ -3312,6 +3316,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-repeat:no-repeat;
 }
 
+.consultoriayGerencia-banner {
+    background: url(../img/consultoria-y-gerencia.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
 .about-content {
     margin-top: 110px;
     padding: 50px 0px;
@@ -3342,6 +3352,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .openhour-page {
     margin-top: 100px
+}
+
+#consimg {
+    background-image: url(../img/fondo_consultoria.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
 }
 
 .single-price {
@@ -3449,9 +3466,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 }
 
-.contact-page-area .map-wrap {
-    margin-bottom: 120px
-}
+/* .contact-page-area .map-wrap {
+} */
 
 @media (max-width: 991px) {
     .contact-page-area .map-wrap {
