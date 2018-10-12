@@ -209,7 +209,7 @@ h5,
 h6,
 .h6 {
     font-size: 14px;
-    color: #222
+    color: #3f494b
 }
 
 td,
@@ -769,7 +769,7 @@ th {
 }
 
 .dark {
-    color: #222
+    color: #3f494b
 }
 
 .relative {
@@ -973,14 +973,16 @@ h6 {
 }
 
 .genric-btn.default {
-    color: #222;
-    background: #f9f9ff;
+    color: #f9f9ff;
+    background: #3f494b;
     border: 1px solid transparent
 }
 
 .genric-btn.default:hover {
-    border: 1px solid #f9f9ff;
-    background: #fff
+    border: 1px solid #3f494b;
+    background: #f9f9ff;
+    color: #3f494b;
+
 }
 
 .genric-btn.default-border {
@@ -989,7 +991,7 @@ h6 {
 }
 
 .genric-btn.default-border:hover {
-    color: #222;
+    color: #3f494b;
     background: #f9f9ff;
     border: 1px solid transparent
 }
@@ -1115,33 +1117,33 @@ h6 {
 }
 
 .genric-btn.link {
-    color: #222;
+    color: #3f494b;
     background: #f9f9ff;
     text-decoration: underline;
     border: 1px solid transparent
 }
 
 .genric-btn.link:hover {
-    color: #222;
+    color: #3f494b;
     border: 1px solid #f9f9ff;
     background: #fff
 }
 
 .genric-btn.link-border {
-    color: #222;
+    color: #3f494b;
     border: 1px solid #f9f9ff;
     background: #fff;
     text-decoration: underline
 }
 
 .genric-btn.link-border:hover {
-    color: #222;
+    color: #3f494b;
     background: #f9f9ff;
     border: 1px solid transparent
 }
 
 .genric-btn.disable {
-    color: #222, 0.3;
+    color: #3f494b, 0.3;
     background: #f9f9ff;
     border: 1px solid transparent;
     cursor: not-allowed
@@ -1191,7 +1193,7 @@ h6 {
 .progress-table .table-head .country,
 .progress-table .table-head .visit,
 .progress-table .table-head .percentage {
-    color: #222;
+    color: #3f494b;
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500
@@ -1988,7 +1990,7 @@ h6 {
 }
 
 .header-top .header-top-right a {
-    color: #222;
+    color: #3f494b;
     font-weight: 400;
     margin-left: 10px;
     background-color: #f9f9ff;
@@ -2228,7 +2230,7 @@ h6 {
 }
 
 #mobile-nav-toggle i {
-    color: #222;
+    color: #3f494b;
     font-weight: 900
 }
 
@@ -2473,6 +2475,24 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top:150px;
 }
 
+.banner-area-2{
+    /* background: url(../img/banner-bg.jpg) center ; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    height: 400px;
+    margin-top:150px;
+}
+.banner-area-2 .carousel-item{
+    height: 400px;
+    min-height: 400px;
+    background: no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .banner-area-1 {
     /* background: url(../img/banner-bg.jpg) center ; */
     background-size: cover;
@@ -2578,7 +2598,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .open-hour-wrap .open-btn {
     background-color: #f9f9ff;
-    color: #222;
+    color: #3f494b;
     font-weight: 600;
     padding: 8px 30px;
     margin-top: 30px
@@ -2600,7 +2620,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .open-hour-wrap .date-list .colm-1 {
     text-align: right;
     margin-right: 30px;
-    color: #222
+    color: #3f494b
 }
 
 .open-hour-wrap .date-list .colm-2 {
@@ -3029,7 +3049,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-blog a {
-    color: #222
+    color: #3f494b
 }
 
 .single-blog .date {
@@ -3296,6 +3316,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-top: 1px dotted #eee
 }
 
+
+
 .switch-wrap {
     margin-bottom: 10px
 }
@@ -3395,7 +3417,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-price .price-bottom .price {
     font-size: 25px;
     margin-top: 10px;
-    color: #222
+    color: #3f494b
 }
 
 .single-price .price-bottom .time {
@@ -3541,7 +3563,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .blog-home-banner .primary-btn {
     border-radius: 0px;
     background: #fff;
-    color: #222;
+    color: #3f494b;
     font-weight: 600;
     border: 1px solid transparent;
     -webkit-transition: all 0.3s ease 0s;
@@ -3586,7 +3608,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .top-category-widget-area .single-cat-widget .overlay-bg {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.8);
     margin: 7%;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -3595,11 +3617,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .top-category-widget-area .single-cat-widget img {
-    width: 100%
+    width: 100%;
+    max-height: 450px;
+    height: 300px;
 }
 
 .top-category-widget-area .single-cat-widget .content-details {
-    top: 32%;
+    top: 40%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -3609,7 +3633,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: absolute
 }
 
-.top-category-widget-area .single-cat-widget .content-details h4 {
+.top-category-widget-area .single-cat-widget .content-details h2 {
     color: #fff
 }
 
@@ -3621,7 +3645,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .top-category-widget-area .single-cat-widget:hover .overlay-bg {
-    background: rgba(103, 188, 0, 0.85);
+    background: rgba(103, 188, 0, 0.7);
     margin: 7%;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -3634,7 +3658,58 @@ body.mobile-nav-active #mobile-nav-toggle {
         margin-bottom: 50px
     }
 }
+.section-carousel-project{
+    background-color:#EFF1F1;
+}
 
+.project-container{
+    /* background-color: red; */
+    height:500px;
+    position: relative;
+}
+.project-container .overlay{
+    background: rgba(0, 0, 0, .153);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.project-container .caption{
+    background:rgba(222, 222, 222, .8);
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+.project-container .caption img{
+    position: relative;
+    height:100px ;
+    float: left;
+
+}
+.project-container .caption a{
+    position: relative;
+    float: right;
+    margin-top:22px;
+}
+.project-container-cartagena{
+    background:  url(../img/proyectos/cartagena.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+.project-container-valledupar{
+    background:  url(../img/proyectos/valledupar.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.project-container-bogota{
+    background:  url(../img/proyectos/bogota.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
 .post-content-area .single-post {
     margin-bottom: 50px
 }
@@ -3660,7 +3735,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .post-content-area .single-post .meta-details .tags li a {
-    color: #222;
+    color: #3f494b;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -3701,7 +3776,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .post-content-area .single-post .view .lnr,
 .post-content-area .single-post .comments .lnr {
     font-weight: 900;
-    color: #222
+    color: #3f494b
 }
 
 .post-content-area .single-post .feature-img img {
@@ -3718,7 +3793,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .post-content-area .single-post .primary-btn {
     background: #fff !important;
-    color: #222 !important;
+    color: #3f494b !important;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -3869,7 +3944,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .widget-wrap .user-info-widget .social-links li a {
-    color: #222;
+    color: #3f494b;
     padding: 10px;
     font-size: 14px;
     -webkit-transition: all 0.3s ease 0s;
@@ -4080,7 +4155,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-post-area .social-links li a {
-    color: #222;
+    color: #3f494b;
     padding: 7px;
     font-size: 14px;
     -webkit-transition: all 0.3s ease 0s;
@@ -4209,7 +4284,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .comments-area a {
-    color: #222
+    color: #3f494b
 }
 
 .comments-area .comment-list {
@@ -4251,7 +4326,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .comments-area .btn-reply {
     background-color: #fff;
-    color: #222;
+    color: #3f494b;
     padding: 8px 30px;
     display: block;
     -webkit-transition: all 0.3s ease 0s;
