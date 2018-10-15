@@ -1780,7 +1780,8 @@ h6 {
     width: 16px;
     height: 16px;
     border-radius: 8px;
-    background: #f9f9ff;
+    background:rgba(158, 158, 158, 0.3);
+    /* background: #f9f9ff; */
     position: relative;
     cursor: pointer
 }
