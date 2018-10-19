@@ -123,7 +123,7 @@ a,
 a:focus,
 a:hover {
     text-decoration: none;
-    outline: 0
+    outline: 0;
 }
 
 .btn.active.focus,
@@ -3760,6 +3760,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .project-area-description-tec .carousel-control-prev, .project-area-description-tec .carousel-control-next{
     opacity: 1;
+}
+.breadcrumbs-details p a{
+    padding:8px;
+    font-size:1rem;
+    color:#3f494b;
+    font-weight:300;
+    transition: all ease-in .2s;
+    -webkit-transition: all ease-in .2s; /* Safari */
+    
+
+
+}
+.breadcrumbs-details p a:hover{
+    font-size:1.0087rem;
+    color:#67bc00; 
 }
 .container-fluid{
     padding-left:0;
