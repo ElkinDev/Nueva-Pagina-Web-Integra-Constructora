@@ -3904,6 +3904,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 .project-area-description-tec .carousel-control-prev, .project-area-description-tec .carousel-control-next{
     opacity: 1;
 }
+.project-area-description-tec .carousel-control-next{
+    right: -80px !important;
+}
+.project-area-description-tec .carousel-control-prev{
+    left: -80px !important;
+
+}
 .breadcrumbs-details p a{
     padding:8px;
     font-size:1rem;
