@@ -36,23 +36,16 @@ try {
     $mail->Password = 'FJi+l2]Tvrzj';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
-
-    //Recipients
-    $mail->setFrom($email,$nombre);
-    if(isset($_POST['correoProyecto'])){
-        $mail->addAddress($correoProyecto);     // Add a recipient
-        $mail->addReplyTo($correoProyecto, utf8_decode('Información'));
-    }else{
+        //Recipients
         $mail->addAddress('integragerenciayconstruccion@gmail.com');     // Add a recipient
         $mail->addReplyTo('integragerenciayconstruccion@gmail.com', utf8_decode('Información'));
-    }
 
 
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject ='Contacto Pagina Web - '.$asunto;
-    $mail->Body    = $message;
+    $mail->Body = $message;
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

@@ -63,7 +63,9 @@ body {
 
 
 }
-
+a{
+    color:#62b900;
+}
 ol,
 ul {
     margin: 0;
@@ -2469,6 +2471,25 @@ body.mobile-nav-active #mobile-nav-toggle {
     -o-background-size: cover;
     background-size: cover;
   }
+
+.banner-area-1 .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(222, 222, 222, .8);
+    width:100%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.banner-area-1 .carousel-caption p{
+ color:#3f4933;
+}
+
   .banner-area-1 {
     /* background: url(../img/banner-bg.jpg) center ; */
     background-size: cover;
