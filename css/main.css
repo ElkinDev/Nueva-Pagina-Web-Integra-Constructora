@@ -92,7 +92,7 @@ iframe {
 .video{
     display: block;
     position: relative;
-    height: 417px;
+    height: 550px;
     width: 100%;
     cursor: pointer;
 
@@ -110,7 +110,7 @@ iframe {
 }
 .video iframe{
     width: 100%;
-    height: 417px;
+    height: 550px;
     margin: 0;
     display:none;
 }
@@ -785,7 +785,8 @@ th {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0
+    bottom: 0;
+    
 }
 
 .container.fullwidth {
@@ -2462,12 +2463,20 @@ body.mobile-nav-active #mobile-nav-toggle {
  .banner-area-1 .carousel-item {
     height: 80vh;
     min-height: 400px;
-    background: no-repeat left center;
+    background: no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
+  .banner-area-1 {
+    /* background: url(../img/banner-bg.jpg) center ; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    height: 80vh;
+    margin-top:110px;
+}
  .carousel-indicators img {
     max-width: 200px !important;
     height: 50px;
@@ -2502,7 +2511,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-attachment: fixed;
     background-repeat:no-repeat;
     height: 380px;
-    margin-top:130px;
+    margin-top:110px;
 }
 
 .banner-area-2{
@@ -2510,33 +2519,39 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size: cover;
     background-attachment: fixed;
     background-repeat:no-repeat;
-    height: 450px;
-    margin-top:130px;
+    height: 80vh;
+    margin-top:110px;
 }
 .banner-area-2 .carousel-item{
-    height:450px;
-    min-height: 400px;
-    background: no-repeat center left;
+    height:80vh;
+    min-height: 300px;
+    background: no-repeat center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
-.banner-area-1 {
-    /* background: url(../img/banner-bg.jpg) center ; */
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat:no-repeat;
-    height: 80vh;
-    margin-top:130px;
+.banner-area-2 .carousel-item>img{
+    height:100%;
 }
+
 
 
 @media (max-width: 767.98px) {
     .banner-area .fullscreen {
         height: 700px !important
     }
+    .banner-area-2{
+
+        height: 400px;
+    }
+    .banner-area-2 .carousel-item{
+        height:400px;
+        min-height: 300px;
+        background: no-repeat center center;
+
+    }
+
 }
 
 .banner-area .primary-btn {
@@ -2562,8 +2577,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 414px) {
+    .carousel-indicators{
+        display:none;
+    }
     .banner-content h1 {
         font-size: 25px
+    }
+    .banner-area-2{
+
+        height: 300px;
+    }
+    .banner-area-2 .carousel-item{
+        height:300px;
+
     }
 }
 
@@ -2682,6 +2708,28 @@ body.mobile-nav-active #mobile-nav-toggle {
     .single-service {
         margin-bottom: 30px
     }
+    .banner-area,.banner-area-1,.banner-area-2{
+       margin-top:90px; 
+    }
+
+    .banner-area-1 .carousel-item {
+        height: 400px;
+        min-height: 400px;
+        /* background: no-repeat left center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; */
+      }
+      .banner-area-1 {
+        /* background: url(../img/banner-bg.jpg) center ; */
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        height: 400px;
+        margin-top:110px;
+    }
+
 }
 
 .home-about-area, .home-about-area-1 {
@@ -2697,7 +2745,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     left: 0;
     width: 50%;
     height: 100%;
-    background: url(../img/gerente.jpg) no-repeat center center/cover;
+    background: url(../img/imagen1.png) no-repeat center center/cover;
     z-index: 1
 }
 
@@ -2708,7 +2756,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 0;
     width: 50%;
     height: 100%;
-    background: url(../img/gerente.jpg) no-repeat center center/cover;
+    background: url(../img/imagen2.png) no-repeat center center/cover;
     z-index: 1;
 }
 @media (max-width: 991px) {
@@ -2896,7 +2944,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .team-area .single-team {
     padding: 10px;
-    height:465px;
     /* min-height:100vh; */
     
 }
@@ -2995,6 +3042,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 991px) {
     .appoinment-area:after {
         display: none
+    }
+    .single-team{
+        margin-top:45px;
     }
 }
 
@@ -3369,7 +3419,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .consultoriayGerencia-banner {
-    background: url(../img/consultoria-y-gerencia.jpg) center;
+    background: url(../img/consultoria-y-gerencia.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+.contacto-banner {
+    background: url(../img/Contactanos_1-01.jpg) center center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat:no-repeat;
@@ -3609,9 +3666,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .blog-home-banner .overlay-bg {
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5);
 }
+.banner-area-1 .overlay-bg{
+    background: rgba(0, 0, 0, .2);
 
+}
 .blog-page {
     background: #f9f9ff
 }
@@ -3729,6 +3789,68 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-size:cover;
     height:500px;
 }
+.project-container-atlantic{
+    background:  url(../img/proyectos/en-curso/atlantic/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+.project-container-santorini{
+    background:  url(../img/proyectos/en-curso/santorini/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+.project-container-acqua{
+    background:  url(../img/proyectos/en-curso/acqua/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+.project-container-palmetto{
+    background:  url(../img/proyectos/en-curso/palmetto/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+.project-container-verona{
+    background:  url(../img/proyectos/en-curso/verona/banner.png) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.project-container-vista{
+    background:  url(../img/proyectos/finalizados/vista/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.project-container-toscana{
+    background:  url(../img/proyectos/finalizados/toscana/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.project-container-tirreno{
+    background:  url(../img/proyectos/finalizados/tirreno/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.project-container-piamonte{
+    background:  url(../img/proyectos/finalizados/piamonte/banner.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.project-container-tikal{
+    background:  url(../img/proyectos/finalizados/tikal/banner-min.jpg) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
+.project-container-fiori{
+    background:  url(../img/proyectos/en-curso/fiori/banner.png) center center no-repeat;
+    background-size:cover;
+    height:500px;
+}
+
 .project-container-valledupar{
     background:  url(../img/proyectos/valledupar.jpg) center center no-repeat;
     background-size:cover;
@@ -3778,6 +3900,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .container-fluid{
     padding-left:0;
+    /* padding-right:0; */
     width:100%;
 }
 .post-content-area .single-post {
@@ -4440,6 +4563,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 991px) {
     .comment-form .email {
         padding-left: 0px
+    }
+}
+
+@media (max-width: 400px) {
+    .banner-area,.banner-area-1,.banner-area-2{
+        margin-top:85px;
     }
 }
 

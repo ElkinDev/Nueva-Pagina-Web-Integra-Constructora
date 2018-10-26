@@ -83,7 +83,7 @@
 	</header><!-- #header -->
 
 	<!-- start banner Area -->
-	<section class="banner-area relative about-banner" id="home">
+	<section class="banner-area relative contacto-banner" id="home">
 		<div class="overlay overlay-bg"></div>
 		<div class="container">
 			<div class="row d-flex align-items-center justify-content-center">
@@ -105,7 +105,7 @@
 			<div class="row">
 				<div class="col-lg-4 d-flex flex-column address-wrap">
 					<div class="single-contact-address d-flex flex-row">
-						<div class="icon">
+						<div class="icon pt-30">
 							<span class="lnr lnr-home"></span>
 						</div>
 						<div class="contact-details">
@@ -113,15 +113,22 @@
 							<p>
 								Calle 66 # 7 - 18 Oficina 213
 							</p>
+
+							<h5>Valledupar, Colombia</h5>
+							<p>
+								Cra 19 # 2d-12 local 11
+							</p>
 						</div>
 					</div>
 					<div class="single-contact-address d-flex flex-row">
-						<div class="icon">
+						<div class="icon pt-15">
 							<span class="lnr lnr-phone-handset"></span>
 						</div>
 						<div class="contact-details">
-							<h5>+57(1) 744 1261 - +57(1) 744 1270</h5>
-							<p>Lunes a Vierners 9am a 6 pm</p>
+							<h5>+57(1) 744 1261 | Bogotá</h5>
+
+							<h5>+57 320 698 9815 | Valledupar</h5>
+							<p>Lunes a Viernes 8am a 5:30 pm</p>
 						</div>
 					</div>
 					<div class="single-contact-address d-flex flex-row">
@@ -129,38 +136,40 @@
 							<span class="lnr lnr-envelope"></span>
 						</div>
 						<div class="contact-details">
-							<h5>ventas@integraconstructora.com.co</h5>
-							<p>Envíenos su consulta en cualquier momento!</p>
+							<h6>servicioalcliente@integraconstructora.com.co</h6>
+							<p>¡Envíenos su consulta en cualquier momento!</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-8 mb-5">
-					<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+					<form class="form-area " id="contactForm" method="post" class="contact-form text-right">
 						<div class="row">
 							<div class="col-lg-6 form-group">
-								<input name="name" placeholder="Nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'"
+								<input name="nombre" placeholder="Nombre" id="nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'"
 								 class="common-input mb-20 form-control" required="" type="text">
 
-								<input name="numCellphone" placeholder="Teléfono / celular" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono / celular'"
+								<input name="telefono" placeholder="Teléfono / celular" id="telefono" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléfono / celular'"
 								 class="common-input mb-20 form-control" required="" type="text">
 
-								<input name="email" placeholder="Correo electrónico" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+								<input name="email" placeholder="Correo electrónico" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
 								 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo electrónico'" class="common-input mb-20 form-control"
 								 required="" type="email">
 
-								<input name="city" placeholder="Ciudad" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ciudad'"
+								<input name="ciudad" placeholder="Ciudad" id="Ciudad" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ciudad'"
 								 class="common-input mb-20 form-control" required="" type="text">
 
-								<input name="subject" placeholder="Asunto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Asunto'"
+								<input name="asunto" placeholder="Asunto" id="Asunto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Asunto'"
 								 class="common-input mb-20 form-control" required="" type="text">
 							</div>
-							<div class="col-lg-6 form-group">
-								<textarea class="common-textarea form-control" name="message" placeholder="Mensaje" onfocus="this.placeholder = ''"
+							<div class="col-lg-6 form-group text-center">
+								<textarea class="common-textarea form-control" id="message" name="mensaje" placeholder="Mensaje" onfocus="this.placeholder = ''"
 								 onblur="this.placeholder = 'Mensaje'" required=""></textarea>
-								<div class="d-flex mt-30 text-center align-items-center justify-content-center">
-									<div class="alert-msg" style="text-align: left;"></div>
-									<button class="genric-btn primary circle" style="float: right;">Enviar Mensaje</button>
+								<div class="d-flex mt-10 text-center align-items-center justify-content-center">
+									<div class="alert-msg" style="text-align: left;"></div> <br>
+
 								</div>
+								<br>
+								<button class="genric-btn primary circle">Enviar Mensaje</button>
 							</div>
 							<div class="col-lg-12">
 
@@ -168,7 +177,6 @@
 						</div>
 					</form>
 				</div>
-				<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
 
 			</div>
 		</div>
@@ -191,7 +199,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 ">
 					<div class="single-footer-widget mail-chimp ">
-						<h6 class="mb-20 ">Contáctanos</h6>
+						<h6 class="mb-20 ">Bogotá </h6>
 						<p>
 							Calle 66 # 7 - 18 Oficina 213, Bogotá - Colombia
 						</p>
@@ -199,7 +207,16 @@
 						<h3>+57(1) 744 1270</h3>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-12 ">
+				<div class="col-lg-4 col-md-6 ">
+					<div class="single-footer-widget mail-chimp ">
+						<h6 class="mb-20 ">Valledupar</h6>
+						<p>
+							Cra 19 # 2d-12 local 11
+						</p>
+						<h3>+57 320 698 9815</h3>
+					</div>
+				</div>
+				<!-- <div class="col-lg-6 col-md-12 ">
 					<div class="single-footer-widget newsletter ">
 						<h6>Newsletter</h6>
 						<p>Puedes confiar en nosotros. Solo enviamos ofertas promocionales, ni un solo spam.</p>
@@ -224,7 +241,7 @@
 							</form>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="row footer-bottom d-flex justify-content-between ">
@@ -232,10 +249,8 @@
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					Copyright &copy;
 					<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Creado con <i class="fa
-							 fa-heart-o "
-					 aria-hidden="true "></i> Por <a href="http://www.transformapublicidad.com/transforma2011/inicio/index.php
-							 "
-					 target="_blank ">Transforma Publicidad
+							 fa-heart-o " aria-hidden="true "></i> Por <a href="http://www.transformapublicidad.com/transforma2011/inicio/index.php
+							 " target="_blank ">Transforma Publicidad
 					</a>
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</p>
@@ -253,7 +268,6 @@
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
 	<script src="js/easing.min.js"></script>
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.min.js"></script>

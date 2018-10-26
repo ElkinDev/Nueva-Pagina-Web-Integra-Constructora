@@ -372,11 +372,48 @@ $(document).ready(function () {
     //------- openVideoFrame --------//
     $(document).ready(function () {
         $('.video').on('click', function (ev) {
-            $('.video img').css({'display':'none'});
+            $('.video img').css({ 'display': 'none' });
             $(".video iframe")[0].src += "?autoplay=1";
-            $('.video iframe').css({'display':'block'});
+            $('.video iframe').css({ 'display': 'block' });
 
         });
     });
 
 });
+
+//submitform Contact
+
+$("#contactForm").submit(function (event) {
+    // cancels the form submission
+    event.preventDefault();
+    $('.alert-msg').text('');
+    submitForm();
+});
+
+function submitForm() {
+    // Initiate Variables With Form Content
+    var url;
+    if($('#correoProyecto').val()!=null){
+        url='../../mail.php'
+    }else{
+        url='mail.php'
+    }
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: $('#contactForm').serialize(),
+        success: function (text) {
+            // console.log('queee es', text);
+            $("#msgSubmit").removeClass("hidden");
+            $('.alert-msg').css({ "color": "#008000" })
+            $('.alert-msg').text('Mensaje enviado exitosamente, Gracias por contactarnos');
+
+
+        }
+    });
+}
+
+
+$('#default-select').on('change', function(e) {
+    window.location.href = e.target.value;
+  });
