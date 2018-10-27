@@ -66,6 +66,9 @@ body {
 a{
     color:#62b900;
 }
+a:hover{
+    color: #3f494b;
+}
 ol,
 ul {
     margin: 0;
@@ -207,7 +210,9 @@ h5,
 .h5 {
     font-size: 16px
 }
-
+.pointer{
+    cursor: pointer;
+}
 h6,
 .h6 {
     font-size: 14px;
@@ -1783,7 +1788,7 @@ h6 {
     width: 16px;
     height: 16px;
     border-radius: 8px;
-    background:rgba(158, 158, 158, 0.3);
+    background:rgba(158, 158, 158, 1);
     /* background: #f9f9ff; */
     position: relative;
     cursor: pointer
@@ -2034,15 +2039,16 @@ h6 {
 
 .main-menu .menu-social-icons a {
     color: #8acd33 !important;
-    margin-right: 15px;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s
+    margin-right: 5px;
+    -webkit-transition: all 0.3s ease 0.3s;
+    -moz-transition: all 0.3s ease 0.3s;
+    -o-transition: all 0.3s ease 0.3s;
+    transition: all 0.3s ease 0.3s
 }
 
 .main-menu .menu-social-icons a:hover {
-    color: #fff !important
+    color: #fff !important;
+    font-weight:900;
 }
 
 @media (max-width: 991px) {
@@ -2133,8 +2139,21 @@ h6 {
     white-space: nowrap;
     padding-left:15px;
     padding-right:15px;
+    -webkit-transition:0.20s all;
+    -moz-transition:0.20s all;
+    -o-transition:0.20s all;
+    transition:0.20s all;
 }
-
+.nav-menu li a{
+    -webkit-transition:0.20s all;
+    -moz-transition:0.20s all;
+    -o-transition:0.20s all;
+    transition:0.20s all;
+}
+.nav-menu li a:hover{
+    margin-top:-0.022rem;
+    font-weight:700;
+}
 .nav-menu>li {
     float: left
 }
@@ -2150,7 +2169,7 @@ h6 {
 }
 
 .nav-menu ul li {
-    min-width: 180px
+    min-width: 180px;
 }
 
 .sf-arrows .sf-with-ul {
