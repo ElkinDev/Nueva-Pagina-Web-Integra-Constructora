@@ -4,7 +4,7 @@
   require './libs/PHPMailer/src/PHPMailer.php';
   require './libs/PHPMailer/src/SMTP.php';
 
-  $to = 'integragerenciayconstruccion@gmail.com';
+  $to = 'servicioalcliente@integraconstructora.com.co';
   $nombre = $_POST["nombre"];
   $telefono = $_POST["telefono"];
   $email= $_POST["email"];

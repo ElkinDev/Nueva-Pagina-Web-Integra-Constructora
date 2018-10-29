@@ -2387,6 +2387,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     .section-title p br {
         display: none
     }
+    .project-area-description-tec .carousel-control-next{
+        right:0 !important;
+    }
+    .project-area-description-tec .carousel-control-prev{
+        left:0 !important;
+    
+    }
 }
 
 .alert-msg {
@@ -2591,6 +2598,10 @@ body.mobile-nav-active #mobile-nav-toggle {
         background: no-repeat center center;
 
     }
+    .carousel-indicators{
+        display:none;
+    }
+
 
 }
 
@@ -2617,9 +2628,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 414px) {
-    .carousel-indicators{
-        display:none;
-    }
+
     .banner-content h1 {
         font-size: 25px
     }
@@ -3850,7 +3859,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     height:500px;
 }
 .project-container-verona{
-    background:  url(../img/proyectos/en-curso/verona/banner.png) center center no-repeat;
+    background:  url(../img/proyectos/en-curso/verona/banner.jpg) center center no-repeat;
     background-size:cover;
     height:500px;
 }
@@ -3886,7 +3895,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .project-container-fiori{
-    background:  url(../img/proyectos/en-curso/fiori/banner.png) center center no-repeat;
+    background:  url(../img/proyectos/en-curso/fiori/banner.jpg) center center no-repeat;
     background-size:cover;
     height:500px;
 }
@@ -3924,10 +3933,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     opacity: 1;
 }
 .project-area-description-tec .carousel-control-next{
-    right: -80px !important;
+    right:-80px;
 }
 .project-area-description-tec .carousel-control-prev{
-    left: -80px !important;
+    left:-80px;
 
 }
 .breadcrumbs-details p a{
