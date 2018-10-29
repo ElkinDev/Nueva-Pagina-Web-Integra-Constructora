@@ -3461,16 +3461,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-banner {
-    background: url(../img/nosotros_bg.jpg) center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url(../img/Banne-quienes-somos.jpg) center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.proyectos-en-curso-banner {
+    background: url(../img/Banner-proyectos-en-construccion2.jpg) center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.proyectos-en-finalizafos-banner {
+    background: url(../img/banner-proyectos-finalizados2.jpg) center center;
+    background-size:cover;
     background-repeat:no-repeat;
 }
 
 .consultoriayGerencia-banner {
     background: url(../img/consultoria-y-gerencia.jpg) center center;
     background-size: cover;
-    background-attachment: fixed;
     background-repeat:no-repeat;
 }
 
