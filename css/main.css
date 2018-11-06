@@ -1879,12 +1879,14 @@ h6 {
 }
 
 .default-select .nice-select {
-    border: none;
+    width: 100%;
     border-radius: 0px;
-    height: 40px;
-    background: #f9f9ff;
+    height: 50px;
+    background: #fff;
     padding-left: 20px;
-    padding-right: 40px
+    padding-right: 40px;
+    box-shadow: none;
+    border-color: #ccc !important;
 }
 
 .default-select .nice-select .list {
@@ -3671,12 +3673,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #fff
 }
 
-.contact-page-area .form-area input {
+.contact-page-area .form-area input,.contact-page-area .form-area select {
     padding: 15px
 }
 
 .contact-page-area .form-area input,
-.contact-page-area .form-area textarea {
+.contact-page-area .form-area textarea,
+.contact-page-area .form-area select  {
     border-radius: 0;
     font-size: 12px
 }
