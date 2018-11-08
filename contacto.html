@@ -14,7 +14,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>Contacto | IGC</title>
+	<title>Contacto | Integra Constructora</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 	<!--
@@ -158,12 +158,19 @@
 								<input name="ciudad" placeholder="Ciudad" id="Ciudad" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ciudad'"
 								 class="common-input mb-20 form-control" required="" type="text">
 
-								<input name="asunto" placeholder="Asunto" id="Asunto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Asunto'"
-								 class="common-input mb-20 form-control" required="" type="text">
 							</div>
 							<div class="col-lg-6 form-group text-center">
 								<textarea class="common-textarea form-control" id="message" name="mensaje" placeholder="Mensaje" onfocus="this.placeholder = ''"
 								 onblur="this.placeholder = 'Mensaje'" required=""></textarea>
+								<div class="default-select mt-20" id="default-select">
+									<select name="asunto" class="form-control" placeholder="Asunto" id="Asunto" required>
+										<option value="" selected disabled>Asunto- Selecciona una opción</option>
+										<option value="Deseo trabajar en Integra">Deseo trabajar en Integra</option>
+										<option value="Busco información acerca de un proyecto">Busco información acerca de un proyecto</option>
+										<option value="Deseo cotizar un apartamento">Deseo cotizar un apartamento</option>
+										<option value="Quiero referir a un amigo o familiar">Quiero referir a un amigo o familiar</option>
+									</select>
+								</div>
 								<div class="d-flex mt-10 text-center align-items-center justify-content-center">
 									<div class="alert-msg" style="text-align: left;"></div> <br>
 
@@ -176,8 +183,9 @@
 									<div class="form-check pointer">
 										<label class="form-check-label pointer">
 											<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="termCD" required>
-											 He leído, acepto y autorizo el <a target="_blank" href="https://integraconstructora.com.co/constructora/public/images/politicas1.pdf"> tratamiento de datos personales y la politica de tratamiento de datos y privacidad.</a>
-										
+											He leído, acepto y autorizo el <a target="_blank" href="https://integraconstructora.com.co/constructora/public/images/politicas1.pdf">
+												tratamiento de datos personales y la politica de tratamiento de datos y privacidad.</a>
+
 										</label>
 									</div>
 
@@ -185,7 +193,7 @@
 
 								</div>
 							</div>
-                            <button class="genric-btn primary circle mt-20">Enviar Mensaje</button>
+							<button class="genric-btn primary circle mt-20">Enviar Mensaje</button>
 
 						</div>
 					</form>
