@@ -2517,20 +2517,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-area-1 .carousel-caption {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    /* background: rgba(222, 222, 222, .8); */
-    width:100%;
+    top: 35px;
+    right: 0;
+    background: rgba(222, 222, 222, .8);
+    width:200px;
     z-index: 10;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #fff;
     text-align: center;
+    bottom: auto;
+    left: auto;
+
 }
 
 
 .banner-area-1 .carousel-caption p{
  color:#3f4933;
+ margin:0;padding:0;
 }
 
   .banner-area-1 {
@@ -3751,8 +3755,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .banner-area-1 .carousel-caption p{
     font-weight:bolder;
-    color: #fff;
-    text-shadow:#fff !important;
+    color: #3f4933;
+    text-shadow:#3f4933 !important;
 }
 .blog-page {
     background: #f9f9ff
